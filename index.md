@@ -1,5 +1,5 @@
 # Welcome to My Website!
-This is the main page of my site. From here, you can go and explore my blog and my projects, as well as read a little bit about me!
+This is the main page of my site. From here, you can go and explore my blog, my projects, my story, as well as read a little bit about me!
 
 
 ## Blog: 
@@ -14,3 +14,6 @@ This is the main page of my site. From here, you can go and explore my blog and 
 ## Information:
 [About Me](about.md)
 
+---
+
+*"The unexamined life is not worth living."* – Socrates
