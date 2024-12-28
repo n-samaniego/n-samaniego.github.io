@@ -15,7 +15,13 @@ This is the main page of my site. From here, you can go and explore my blog, my 
 [About Me](about.md)
 
 
+
+
+
 ---
+
+
+
 
 
 *"The unexamined life is not worth living."* – Socrates
