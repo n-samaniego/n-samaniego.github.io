@@ -1,0 +1,141 @@
+/* Global Reset */
+body {
+    font-family: 'Times New Roman', Times, serif;  /* Added fallback font */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: #130404;  /* Dark background */
+    color: #d7be69;  /* Text and general color */
+}
+
+/* Header Styling */
+header {
+    background: #111511;
+    color: #d7be69;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+/* Headings and Links */
+h1, h2, h3, h4, h5, h6 {
+    color: #d7be69;
+    font-family: 'Times New Roman', Times, serif; /* Ensure headings also use the same font */
+}
+
+a {
+    color: #d7be69;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #bda356; /* Slightly darker on hover */
+}
+
+/* Main Container for Posts */
+main {
+    max-width: 1500px;  /* Slightly narrower for better focus */
+    margin: 2rem auto;  /* Center vertically and horizontally */
+    padding: 2rem;
+    width: 95%;  /* Slight margin from window edges */
+}
+
+/* Unordered List Styling */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* List Item - Post Styling */
+li {
+    margin: 2rem 0;  /* More space between posts */
+}
+
+/* Individual Post Item */
+.post-list-item {
+    padding: 1.5rem;
+    border: 1px solid #444;  /* Darker border to blend with theme */
+    border-radius: 12px;  /* Rounded corners */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);  /* More pronounced shadow */
+    background-color: #111511;  /* Green background for posts, matches the header */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect */
+.post-list-item:hover {
+    transform: translateY(-8px);  /* Slight lift */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Post Title */
+.post-title {
+    display: block;
+    font-size: 1.8rem;  /* Larger for emphasis */
+    margin-bottom: 0.5rem;
+}
+
+/* Post Date */
+.post-date {
+    display: block;
+    margin: 0.3rem 0 1rem;
+    font-size: 1rem;
+    color: #b4a07a;  /* Muted tone for subtlety */
+}
+
+/* Post Excerpt */
+.post-excerpt {
+    margin: 0.5rem 0;
+    line-height: 1.5;
+    color: #d7be69;  /* Match overall theme */
+}
+
+/* Pagination Styling */
+.pagination {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.pagination-link, .pagination a {
+    margin: 0 8px;
+    padding: 6px 12px;
+    background-color: #1a1a1a;
+    border: 1px solid #444;
+    color: #bda356;  /* Slightly lighter/darker for pagination links */
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.pagination-link:hover, .pagination a:hover {
+    background-color: #2c2c2c;
+}
+
+/* Button Styling */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #210606;  /* Your chosen color */
+    color: #fff;  /* White text */
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #130404;  /* Brighter red for more contrast */
+}
+
+/* Button Focus Styles for Accessibility */
+.button:focus {
+    outline: 3px solid #d7be69; /* Highlight button focus */
+}
+
+/* Smooth Scrolling for anchor links */
+html {
+    scroll-behavior: smooth;
+}
