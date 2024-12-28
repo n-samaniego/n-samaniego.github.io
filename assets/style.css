@@ -1,11 +1,16 @@
 /* Global Reset */
-body {
+html, body {
     font-family: 'Times New Roman', Times, serif;  /* Added fallback font */
     line-height: 1.6;
     margin: 0;
     padding: 0;
     background: #130404;  /* Dark background */
     color: #d7be69;  /* Text and general color */
+    overflow-x: hidden;  /* Prevent horizontal scroll */
+}
+
+body {
+    width: 100%;
 }
 
 /* Header Styling */
@@ -33,7 +38,7 @@ a:hover {
 
 /* Main Container for Posts */
 main {
-    max-width: 1500px;  /* Slightly narrower for better focus */
+    max-width: 100%;  /* Remove fixed width limit to ensure it stays within the viewport */
     margin: 2rem auto;  /* Center vertically and horizontally */
     padding: 2rem;
     width: 95%;  /* Slight margin from window edges */
@@ -59,12 +64,24 @@ li {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);  /* More pronounced shadow */
     background-color: #111511;  /* Green background for posts, matches the header */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
 }
 
 /* Hover Effect */
 .post-list-item:hover {
     transform: translateY(-8px);  /* Slight lift */
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Make entire post clickable */
+.post-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+.post-link:hover .post-list-item {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.35);
 }
 
 /* Post Title */
@@ -130,12 +147,30 @@ li {
     background-color: #210606;  /* Brighter red for more contrast */
 }
 
-/* Button Focus Styles for Accessibility */
 .button:focus {
-    outline: 3px solid #fff; /* Highlight button focus */
+    outline: 3px solid #fff;
 }
 
-/* Smooth Scrolling for anchor links */
 html {
     scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;  /* Ensures padding and borders do not overflow elements */
+}
+
+html, body {
+    width: 100%;
+    overflow-x: hidden;  /* Prevents horizontal scrolling */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 10px; /* Add small horizontal padding */
 }
